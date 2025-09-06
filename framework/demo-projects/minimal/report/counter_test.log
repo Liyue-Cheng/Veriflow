@@ -1,0 +1,78 @@
+
+================================================================================
+                Starting Full Workflow: CounterFunctionalityTest                
+================================================================================
+
+
+================================================================================
+                   Simulation Stage: CounterFunctionalityTest                   
+================================================================================
+
+
+--- Preparing Icarus Verilog Simulation for task: CounterFunctionalityTest ---
+
+2025-09-06 21:49:36 | INFO     | Found 1 RTL file(s) in 'C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\rtl'.
+
+----------------------- [Icarus] Starting Compilation ------------------------
+
+2025-09-06 21:49:36 | DEBUG    | Executing command (Mode: buffered): "C:\Users\liyue\Desktop\projects\Veriflow\framework\utils\iverilog\bin\iverilog.exe" -o "C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\sim_outputs\simulation.vvp" -s counter_tb -g2012 "C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\rtl\counter.v" "C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\tb\counter_tb.v"
+2025-09-06 21:49:37 | DEBUG    | Using encoding: 'gbk' for subprocess output decoding.
+2025-09-06 21:49:37 | DEBUG    | Buffered command executed successfully.
+2025-09-06 21:49:37 | SUCCESS  | [Icarus] Compilation Successful
+
+------------------------ [Icarus] Starting Simulation ------------------------
+
+2025-09-06 21:49:37 | DEBUG    | Executing command (Mode: buffered): "C:\Users\liyue\Desktop\projects\Veriflow\framework\utils\iverilog\bin\vvp.exe" "C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\sim_outputs\simulation.vvp"
+2025-09-06 21:49:37 | DEBUG    | Working directory: C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\sim_outputs
+2025-09-06 21:49:37 | DEBUG    | Using encoding: 'gbk' for subprocess output decoding.
+2025-09-06 21:49:37 | DEBUG    | Buffered command executed successfully.
+2025-09-06 21:49:37 | INFO     | STDOUT:
+---
+VCD info: dumpfile waveform.vcd opened for output.
+Time=0 rst_n=0 count=0000
+Time=20000 rst_n=1 count=0000
+Time=25000 rst_n=1 count=0001
+Time=35000 rst_n=1 count=0010
+Time=45000 rst_n=1 count=0011
+Time=55000 rst_n=1 count=0100
+Time=65000 rst_n=1 count=0101
+Time=75000 rst_n=1 count=0110
+Time=85000 rst_n=1 count=0111
+Time=95000 rst_n=1 count=1000
+Time=105000 rst_n=1 count=1001
+Time=115000 rst_n=1 count=1010
+Time=125000 rst_n=1 count=1011
+Time=135000 rst_n=1 count=1100
+Time=145000 rst_n=1 count=1101
+Time=155000 rst_n=1 count=1110
+Time=165000 rst_n=1 count=1111
+Time=175000 rst_n=1 count=0000
+Time=185000 rst_n=1 count=0001
+Time=195000 rst_n=1 count=0010
+Time=205000 rst_n=1 count=0011
+Time=215000 rst_n=1 count=0100
+Time=220000 rst_n=0 count=0000
+Time=240000 rst_n=1 count=0000
+Time=245000 rst_n=1 count=0001
+Time=255000 rst_n=1 count=0010
+Time=265000 rst_n=1 count=0011
+Time=275000 rst_n=1 count=0100
+Time=285000 rst_n=1 count=0101
+Time=295000 rst_n=1 count=0110
+Time=305000 rst_n=1 count=0111
+Time=315000 rst_n=1 count=1000
+Time=325000 rst_n=1 count=1001
+Time=335000 rst_n=1 count=1010
+C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\tb\counter_tb.v:46: $finish called at 340000 (1ps)
+---
+2025-09-06 21:49:37 | SUCCESS  | [Icarus] Simulation Successful
+2025-09-06 21:49:37 | INFO     | Waveform file generated: C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\sim_outputs\waveform.vcd
+2025-09-06 21:49:37 | INFO     | Simulation stage completed successfully
+
+================================================================================
+             Task 'CounterFunctionalityTest' PASSED (Full Workflow)             
+================================================================================
+
+2025-09-06 21:49:37 | INFO     | ✅ Task 'CounterFunctionalityTest' completed successfully!
+2025-09-06 21:49:37 | INFO     | Counter test (iverilog) completed successfully!
+2025-09-06 21:49:37 | INFO     | Waveform file may be available at: C:\Users\liyue\Desktop\projects\Veriflow\framework\demo-projects\minimal\sim_outputs\waveform.vcd

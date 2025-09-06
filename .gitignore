@@ -1,0 +1,161 @@
+# =============================
+# Python
+# =============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+.python-version
+*.egg-info/
+.eggs/
+dist/
+build/
+site/
+pip-wheel-metadata/
+
+# Test, coverage, type checking
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.tox/
+.nox/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and reports
+logs/
+*.log
+!framework/**/report/*.log
+
+# Environment / secrets
+.env
+.env.*
+.secret
+*.pem
+*.key
+
+# =============================
+# IDE / Editors / OS
+# =============================
+.vscode/
+.idea/
+.history/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.orig
+.cursor/
+
+# =============================
+# HDL / EDA tools
+# =============================
+# Generic simulation outputs
+*.vcd
+*.fst
+*.fsdb
+*.ghw
+*.wdb
+*.lxt
+*.lxt2
+*.vpd
+*.ucdb
+
+# Verilator
+obj_dir/
+.vlt/
+
+# Icarus Verilog
+simv
+a.out
+
+# ModelSim / Questa
+work/
+transcript
+vsim.wlf
+wlf*
+modelsim.ini
+
+# Xilinx Vivado / Vitis
+.Xil/
+.xil/
+*.jou
+*.str
+*.rpt
+*.html
+*.dcp
+*.xpr
+*.xise
+*.bit
+*.bin
+*.mmi
+*.pdi
+*.ltx
+*.runs/
+*.cache/
+*.hw/
+*.sdk/
+.ip_user_files/
+.sim/
+*.sim/
+.vivado*
+.vitis*
+.vivado.begin.rst
+.vivado.end.rst
+
+# Intel Quartus
+db/
+incremental_db/
+output_files/
+*.qws
+*.qpf
+*.qsf
+*.sof
+*.pof
+
+# Cadence Xcelium / Incisive
+INCA_libs/
+xcelium.d/
+xrun.history
+
+# Synopsys VCS
+csrc/
+simv.daidir/
+ucli.key
+DVEfiles/
+.vcs/
+
+# Aldec Riviera-PRO
+riviera/
+
+# Mentor Precision / MTI
+mti_lib/
+
+# Misc build/temp
+.tmp/
+tmp/
+temp/
+*.bak
+
+# =============================
+# Veriflow framework specifics
+# =============================
+!framework/**/.veriflow-root
+
+
